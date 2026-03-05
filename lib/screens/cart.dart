@@ -11,9 +11,8 @@ class cart extends StatelessWidget{
       appBar: AppBar(
         backgroundColor: Color(0xffffffff),
         leading:Container(
-          child: Icon(Icons.arrow_back_ios,size: 22,
-            fontWeight: FontWeight.bold,),
-          alignment: Alignment.centerRight,
+          child: IconButton(onPressed: (){Navigator.pop(context);}, icon: Icon(Icons.arrow_back_ios,size: 22,
+          fontWeight: FontWeight.bold),alignment: Alignment.centerRight,),
           decoration:BoxDecoration(
               borderRadius: BorderRadius.circular(15),
               boxShadow: [
@@ -314,21 +313,20 @@ class cart extends StatelessWidget{
                       fontWeight: FontWeight.bold,
                     ),
                       textAlign: TextAlign.left,),
-               Expanded(
-                 child: Container(
-                      width: 500,
-                      padding: EdgeInsets.all(20),
-                      decoration: BoxDecoration(
-                          color: Color(0xffeeeef0),
-                          borderRadius: BorderRadius.circular(10)
-                      ),
-                      child: Text("9224 Jailyn Terrace, block 2, North Maryjaneton, Tanzania, 4387242",
-                        style: TextStyle(
-                            fontWeight: FontWeight.w500,
-                            fontSize: 18,
-                        ),),
+               // expanded I Removed it
+               Container(
+                    width: 500,
+                    padding: EdgeInsets.all(20),
+                    decoration: BoxDecoration(
+                        color: Color(0xffeeeef0),
+                        borderRadius: BorderRadius.circular(10)
                     ),
-               ),
+                    child: Text("9224 Jailyn Terrace, block 2, North Maryjaneton, Tanzania, 4387242",
+                      style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 18,
+                      ),),
+                  ),
             ],
                 ),
 

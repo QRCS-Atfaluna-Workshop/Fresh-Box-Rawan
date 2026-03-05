@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
-
+import 'package:gittest/screens/cart.dart';
+// import 'screens/cart.dart';
 class Home extends StatelessWidget{
   @override
   Widget build(BuildContext context) {
@@ -368,11 +369,16 @@ class Home extends StatelessWidget{
                         width: 80,
                         height: 30,
                         padding: EdgeInsets.all(5),
-                        child: Text("See All",textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Color(0xffffffff),
-                                fontSize: 16
-                            )),
+                        child: InkWell(
+                          onTap: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context)=>cart()));
+                          },
+                          child: Text("See All",textAlign: TextAlign.center,
+                              style: TextStyle(
+                                  color: Color(0xffffffff),
+                                  fontSize: 16
+                              )),
+                        ),
 
                         decoration: BoxDecoration(
                             color: Color(0xff171717),
