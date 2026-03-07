@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gittest/screens/login.dart';
+import 'package:gittest/screens/populer-food.dart';
 import 'screens/cart.dart';
 import 'home.dart';
 
@@ -14,9 +15,10 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      scrollBehavior: ScrollBehavior(),
+      title: 'Food Popular',
       debugShowCheckedModeBanner: false,
-      home: Login(),
+      home: PopulerFood(),
     );
   }
 }
