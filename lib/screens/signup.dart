@@ -164,7 +164,7 @@ class _SignupState extends  State<Signup>{
                              ),
                              suffixIcon: Icon(Icons.visibility_off_outlined,color: Color(0xff121212),size: 26,),
                              contentPadding: EdgeInsets.symmetric(vertical: 25,horizontal: 20),
-                             hintText: "Enter your password",
+                             hintText: "Create Your Password",
                              filled: true,
                              fillColor: Color(0xffffffff),
                              enabledBorder: OutlineInputBorder(
