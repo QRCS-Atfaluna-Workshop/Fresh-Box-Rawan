@@ -1,6 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:gittest/screens/signup.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -182,15 +183,21 @@ class _LoginState extends State<Login> {
                   ),
                 ],
               ),
-              Center(
-                child: RichText(text: TextSpan(
-                    style: TextStyle(fontWeight: FontWeight.w300,fontSize: 16,color: Color(0xff121212),),
-                    children:[
-                      TextSpan(text: "Don’t have an account? "),
-                      TextSpan(text: "Sign Up",style: TextStyle(color: Color(0xffeb6a58))),
-                    ]
-                ),
-                ),
+            Center(
+                  child: InkWell(
+                    onTap: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Signup(),));
+                    },
+                    child: RichText(text: TextSpan(
+                        style: TextStyle(fontWeight: FontWeight.w300,fontSize: 16,color: Color(0xff121212),),
+                        children:[
+                          TextSpan(text: "Don’t have an account? "),
+                          TextSpan(text: "Sign Up",style: TextStyle(color: Color(0xffeb6a58))),
+                        ]
+                    ),
+                    ),
+                  ),
+
               ),
               Container(
                 width: 450,
@@ -204,7 +211,7 @@ class _LoginState extends State<Login> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    SvgPicture.asset("images/google.svg",width:20,height: 20),
+                    SvgPicture.asset("assets/images/google.svg",width:20,height: 20),
                     Text("Continue With Google",style: TextStyle(
                       fontSize: 14,
                     ))
@@ -224,7 +231,7 @@ class _LoginState extends State<Login> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     // Icon(Icons.facebook_sharp,color: Color(0xffffffff),),
-                    SvgPicture.asset("images/facebook.svg",width: 20,height: 20,),
+                    SvgPicture.asset("assets/images/facebook.svg",width: 20,height: 20,),
                     Text("Continue With Facebook",style: TextStyle(
                       fontSize: 14,color: Color(0xffffffff),
                     ))

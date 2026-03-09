@@ -86,7 +86,7 @@ class PopulerFood extends StatelessWidget {
                                       child: Stack(children: [
                                         ClipRRect(
                                           borderRadius: BorderRadius.circular(20),
-                                          child: Image.asset("images/one.jpg",
+                                          child: Image.asset("assets/images/one.jpg",
                                             fit: BoxFit.cover,
                                             height: double.infinity,
                                             width: double.infinity,
@@ -177,7 +177,7 @@ class PopulerFood extends StatelessWidget {
                                       child: Stack(children: [
                                         ClipRRect(
                                           borderRadius: BorderRadius.circular(20),
-                                          child: Image.asset("images/two.jpg",
+                                          child: Image.asset("assets/images/two.jpg",
                                             fit: BoxFit.cover,
                                             height: double.infinity,
                                             width: double.infinity,
@@ -258,7 +258,7 @@ class PopulerFood extends StatelessWidget {
                                       child: Stack(children: [
                                         ClipRRect(
                                           borderRadius: BorderRadius.circular(20),
-                                          child: Image.asset("images/three.jpg",
+                                          child: Image.asset("assets/images/three.jpg",
                                             fit: BoxFit.cover,
                                             height: double.infinity,
                                             // width: 130,
@@ -332,7 +332,7 @@ class PopulerFood extends StatelessWidget {
                                       child: Stack(children: [
                                         ClipRRect(
                                           borderRadius: BorderRadius.circular(20),
-                                          child: Image.asset("images/four.jpg",
+                                          child: Image.asset("assets/images/four.jpg",
                                             fit: BoxFit.cover,
                                             height: double.infinity,
                                             width: double.infinity,
@@ -464,7 +464,7 @@ class PopulerFood extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Image.asset("images/fruit.png",
+                          Image.asset("assets/images/fruit.png",
                             width: 120,
                             height: 120,),
                           Column(
@@ -506,7 +506,7 @@ class PopulerFood extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Image.asset("images/rice.png",
+                          Image.asset("assets/images/rice.png",
                             width: 120,
                             height: 120,),
                           Column(
@@ -549,7 +549,7 @@ class PopulerFood extends StatelessWidget {
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                         children: [
-                          Image.asset("images/salad.png",
+                          Image.asset("assets/images/salad.png",
                             width: 120,
                             height: 120,),
                           Column(
