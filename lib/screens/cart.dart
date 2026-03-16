@@ -1,12 +1,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:gittest/screens/login.dart';
+import 'package:gittest/screens/product_details.dart';
 
 class cart extends StatelessWidget{
-  const cart({super.key});
 
+  int counter =0;
   @override
   Widget build(BuildContext context) {
+
     // TODO: implement build
     return Scaffold(
       backgroundColor: Color(0xfff5f5f5),
@@ -20,7 +22,6 @@ class cart extends StatelessWidget{
             // padding: EdgeInsets.all(10),
             height: 48,
             width: 48,
-            child: Center(child: Icon(Icons.arrow_back_ios_rounded,size: 20,)),
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(12),
                 boxShadow: [
@@ -32,6 +33,7 @@ class cart extends StatelessWidget{
                   ),
                 ]
             ),
+            child: Center(child: Icon(Icons.arrow_back_ios_rounded,size: 20,)),
           ),
         ),
         title: Text("Popular Food"),centerTitle: true,
@@ -62,7 +64,7 @@ class cart extends StatelessWidget{
               spacing: 20,
               children: [
                 Container(
-                  height: 140,
+                  height: 155,
                   padding: EdgeInsets.all(15),
                   width: double.infinity,
                   decoration: BoxDecoration(
@@ -101,7 +103,7 @@ class cart extends StatelessWidget{
                         ],
                       ),
                       Column(
-                        spacing: 2,
+                        spacing: 10,
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -119,10 +121,10 @@ class cart extends StatelessWidget{
                                   fontSize: 18),
                           ),
                           Row(
-                            spacing: 80,
+                            spacing: 20,
                             children: [
                               Row(
-                                spacing: 10,
+                                spacing: 6,
                                 children: [
                                   Icon(Icons.star , size: 24, color: Color(0xff5bc439),),
                                   Text("4.5", style:
@@ -135,11 +137,11 @@ class cart extends StatelessWidget{
                                 ],
                               ),
                               Row(
-                                spacing: 10,
+                                spacing: 9,
                                 children: [
                                   Container(
-                                    width: 40,
-                                    height: 40,
+                                    width: 35,
+                                    height: 35,
                                     alignment: Alignment.center,
                                     child: Icon(Icons.minimize,size: 20,),
                                     decoration: BoxDecoration(
@@ -153,8 +155,8 @@ class cart extends StatelessWidget{
                                         ),
                                       ),
                                   Container(
-                                    width: 40,
-                                    height: 40,
+                                    width: 35,
+                                    height: 35,
                                     child: Icon(Icons.add,size: 20,),
                                     decoration: BoxDecoration(
                                         color: Color(0xffe3e2e6),
@@ -211,7 +213,7 @@ class cart extends StatelessWidget{
                         ],
                       ),
                       Column(
-                        spacing: 5,
+                        spacing: 6,
                         mainAxisAlignment: MainAxisAlignment.start,
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
@@ -229,10 +231,10 @@ class cart extends StatelessWidget{
                                 fontSize: 18),
                           ),
                           Row(
-                            spacing: 80,
+                            spacing: 20,
                             children: [
                               Row(
-                                spacing: 10,
+                                spacing: 9,
                                 children: [
                                   Icon(Icons.star , size: 24, color: Color(0xff5bc439),),
                                   Text("4.5", style:
@@ -245,17 +247,17 @@ class cart extends StatelessWidget{
                                 ],
                               ),
                               Row(
-                                spacing: 10,
+                                spacing: 6,
                                 children: [
                                   Container(
-                                    width: 40,
-                                    height: 40,
+                                    width: 35,
+                                    height: 35,
                                     alignment: Alignment.center,
-                                    child: Icon(Icons.minimize,size: 20,),
                                     decoration: BoxDecoration(
                                         color: Color(0xffe3e2e6),
                                         borderRadius: BorderRadius.circular(10)
                                     ),
+                                    child: Icon(Icons.minimize,size: 20,),
                                   ),
                                   Container(
                                     child: Text("  "),
@@ -263,8 +265,8 @@ class cart extends StatelessWidget{
                                     ),
                                   ),
                                   Container(
-                                    width: 40,
-                                    height: 40,
+                                    width: 35,
+                                    height: 35,
                                     child: Icon(Icons.add,size: 20,),
                                     decoration: BoxDecoration(
                                         color: Color(0xffe3e2e6),
@@ -305,9 +307,10 @@ class cart extends StatelessWidget{
                       style: TextStyle(
                         overflow:TextOverflow.visible ,
                         fontFamily: 'Montserrat-Light',
-                          fontWeight: FontWeight.w300,
-                          fontSize: 17,
-                      ),),
+                          fontWeight: FontWeight.w400,
+                          fontSize: 18,
+                      ),
+                    ),
                   ),
             ],
                 ),
@@ -327,7 +330,7 @@ class cart extends StatelessWidget{
                               style: TextStyle(
                                 color: Color(0xff363D4E),fontSize: 15,
                                 fontFamily: 'Montserrat-Light',
-                                fontWeight: FontWeight.w300,)
+                                fontWeight: FontWeight.w400,)
                            ),
                             Text("\$10",style: TextStyle(
                             color: Color(0xff363D4E),
@@ -343,11 +346,11 @@ class cart extends StatelessWidget{
                             color: Color(0xff363D4E),
                               fontSize: 15,
                               fontFamily: 'Montserrat-Light',
-                              fontWeight: FontWeight.w300
+                              fontWeight:FontWeight.w400
                           ),),
                           Text("\$10",style: TextStyle(color: Color(0xff363D4E),
                               fontSize: 18,
-                              fontFamily: 'Montserrat-Light',fontWeight: FontWeight.w200)),
+                              fontFamily: 'Montserrat-Light',fontWeight: FontWeight.w400)),
                         ],
                       ),
                       Row(
@@ -356,7 +359,7 @@ class cart extends StatelessWidget{
                           Text('Delivery Fee',style: TextStyle(color: Color(0xff363D4E),
                               fontSize: 15,
                               fontFamily: 'Montserrat-Light',
-                              fontWeight: FontWeight.w300)),
+                              fontWeight: FontWeight.w400)),
                           Text("\$5",style:TextStyle(color: Color(0xff363D4E),fontSize: 18,fontFamily: 'Montserrat-Light')),
                         ],
                       ),
@@ -366,7 +369,7 @@ class cart extends StatelessWidget{
                           Text('Discount',style:TextStyle(color: Color(0xff363D4E),
                               fontSize: 15,
                               fontFamily: 'Montserrat-Light',
-                              fontWeight: FontWeight.w300)),
+                              fontWeight: FontWeight.w400)),
                           Text("-\$8",style:TextStyle(color: Color(0xff363D4E),fontSize: 18,fontFamily: 'Montserrat-Light')),
                         ],
                       ),
@@ -387,7 +390,7 @@ class cart extends StatelessWidget{
                   height: 50,
                   width: double.infinity,
                   child:  ElevatedButton(onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context)=>Login()));
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>ProductDetails()));
                   },
                     style: ElevatedButton.styleFrom(
                     backgroundColor: Color(0xffeb6a58),
@@ -399,7 +402,8 @@ class cart extends StatelessWidget{
                       color: Color(0xffffffff),
                       fontSize: 20,
                     fontFamily: 'Montserrat-Light',
-                    ),),
+                    ),
+                    ),
                   ),
                 )
               ],
